@@ -118,6 +118,5 @@ docker cp index.html  c1:/var/www/html/
 ````
 ### copy file  container to machine 
 ````
-````
 docker cp c1:/var/www/html/index.html  .
 ````
