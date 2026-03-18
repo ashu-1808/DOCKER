@@ -9,18 +9,15 @@
 <img width="1281" height="601" alt="image" src="https://github.com/user-attachments/assets/b6704028-f9e4-4331-a65c-aff79077393a" />
 
 ##  ${\color{lightblue} \textbf{ Monolithic \ vs \ Microservises}}$
-| Feature        | VM 🖥️              | Container 📦              |
-|----------------|--------------------|---------------------------|
-| OS             | Full OS per VM     | No OS (shared)            |
-| Size           | Heavy (GBs)        | Light (MBs)               |
-| Startup        | Slow               | Very fast                 |
-| Performance    | Lower              | Near native               |
-| Isolation      | Strong             | Moderate                  |
-| Resource Usage | High (more CPU/RAM)| Low (efficient sharing)   |
-| Portability    | Less portable      | Highly portable (runs anywhere with container runtime) |
 
-
-
+| Feature    | Monolithic 🧱                 | Microservices 🧩                     |
+| ---------- | ----------------------------- | ------------------------------------ |
+| Structure  | Single big application        | Many small services                  |
+| Deployment | Deploy whole app at once      | Deploy services separately           |
+| Scaling    | Scale entire app              | Scale only needed service            |
+| Failure    | One failure affects whole app | One failure affects only one service |
+| Technology | Single tech stack             | Multiple technologies possible       |
+| Complexity | Simple to start               | More complex but flexible            |
 
 
 ${\color{Green} \textbf{1. \ Developement \ Team:}}$ Responsible for writing code
@@ -65,33 +62,18 @@ ${\color{lightblue}  \textbf{Docker}}$
   - resource efficiency
 
 
-
-
-
-
-
 ##  ${\color{lightblue} \textbf{Virtual Machines (VMs) \ vs. \  Containers)}}$
 
-| Feature                   | Virtual Machines (VMs)                               | Containers                                     |
-|---------------------------|------------------------------------------------------|------------------------------------------------|
-| **Architecture**          | Includes the entire OS, virtual hardware, and application | Shares the host OS kernel, includes only the application and its dependencies |
-| **Size**                  | Typically large, includes full OS                   | Lightweight, usually in MBs                    |
-| **Startup Time**          | Slower, can take minutes                            | Fast, usually in seconds                       |
-| **Performance**           | Potential overhead due to full OS virtualization    | Near-native performance, minimal overhead      |
-| **Isolation**             | Strong isolation, each VM has its own OS            | Process-level isolation, shares OS kernel      |
-| **Resource Efficiency**   | Less efficient, more resources required per VM      | Highly efficient, better resource utilization  |
-| **Portability**           | Portable across different environments, but larger in size | Highly portable, easy to move and replicate   |
-| **Management**            | Requires hypervisor (e.g., VMware, Hyper-V)         | Requires container runtime (e.g., Docker)      |
-| **Deployment Speed**      | Slower deployment due to full OS boot               | Rapid deployment                               |
-| **Scalability**           | Scalable, but with more overhead and complexity     | Highly scalable with orchestration tools (e.g., Kubernetes) |
-| **Security**              | Strong isolation with separate OS instances         | Shared kernel can pose security risks, but improving |
-| **Use Cases**             | Running multiple OS environments, legacy application support | Microservices, agile development, continuous integration/continuous deployment (CI/CD) |
-| **Storage**               | Each VM has its own storage                         | Containers can share storage volumes           |
-| **Networking**            | Requires network bridging or virtual netwo
 
-
-
-
+| Feature        | VM 🖥️              | Container 📦              |
+|----------------|--------------------|---------------------------|
+| OS             | Full OS per VM     | No OS (shared)            |
+| Size           | Heavy (GBs)        | Light (MBs)               |
+| Startup        | Slow               | Very fast                 |
+| Performance    | Lower              | Near native               |
+| Isolation      | Strong             | Moderate                  |
+| Resource Usage | High (more CPU/RAM)| Low (efficient sharing)   |
+| Portability    | Less portable      | Highly portable (runs anywhere with container runtime) |
 
 
 <img width="1175" height="678" alt="image" src="https://github.com/user-attachments/assets/537434ed-6c7b-4d71-a247-bb61cfff4279" />
