@@ -20,7 +20,7 @@ It automates the process of creating images by defining the environment, depende
    - Defines metadata about the image creator.  
    - Example:  
      ```dockerfile
-     LABEL maintainer="abhipraydh96@gmail.com"
+     LABEL maintainer="ashutoshtoradmal@gmail.com"
      ```
 
 3. **RUN**  
