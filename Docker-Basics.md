@@ -14,7 +14,7 @@ Downloads a Docker image from the specified registry or DockerHub.
 ```
 docker pull <image_name>
 ```
-### my dockerhub username (you can pull sample images from here)
+### dockerhub username (you can pull sample images from here)
 ````
 abhipraydh96
 ````
