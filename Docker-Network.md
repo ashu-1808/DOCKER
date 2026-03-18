@@ -38,7 +38,7 @@ apt install iputils-ping -y
 ping c2
 ````
 
-# log in into c1
+# log in into c2
 ````
 apt update
 apt install iputils-ping -y
