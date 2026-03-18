@@ -82,11 +82,9 @@ ${\color{lightblue}  \textbf{Docker}}$
 | Resource Usage | High (more CPU/RAM)| Low (efficient sharing)   |
 | Portability    | Less portable      | Highly portable (runs anywhere with container runtime) |
 
-<img width="1365" height="547" alt="image" src="https://github.com/user-attachments/assets/52c25be2-c2e0-4806-a3cb-b54636237476" />
-<img width="1542" height="593" alt="image" src="https://github.com/user-attachments/assets/02800600-5a46-4ca0-9b17-8b6e76bbb625" />
 
 ##  ${\color{lightblue} \textbf{docker \ architecture}}$ 
-
+<img width="1365" height="547" alt="image" src="https://github.com/user-attachments/assets/52c25be2-c2e0-4806-a3cb-b54636237476" />
 <img width="801" height="401" alt="image" src="https://github.com/user-attachments/assets/044a0c54-6aaf-40b8-bdb7-256f626d7b4a" />
 
 
@@ -122,5 +120,6 @@ sudo chmod 777 /var/run/docker.sock
 docker --version
 ````
 
+<img width="1542" height="593" alt="image" src="https://github.com/user-attachments/assets/02800600-5a46-4ca0-9b17-8b6e76bbb625" />
 
 
