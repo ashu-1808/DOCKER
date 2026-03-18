@@ -9,16 +9,15 @@
 <img width="1281" height="601" alt="image" src="https://github.com/user-attachments/assets/b6704028-f9e4-4331-a65c-aff79077393a" />
 
 ##  ${\color{lightblue} \textbf{ Monolithic \ vs \ Microservises}}$
-| Feature        | VM 🖥️                                                                 | Container 📦                                                                 |
-|----------------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| OS             | A virtual machine runs a full operating system for each instance.      | A container does not run a full OS and instead shares the host OS kernel.   |
-| Size           | Virtual machines are large in size, typically measured in gigabytes.   | Containers are lightweight and usually measured in megabytes.               |
-| Startup        | Virtual machines take longer to start because they boot an entire OS.  | Containers start very quickly since no OS boot process is required.         |
-| Performance    | Virtual machines have lower performance due to overhead.               | Containers provide near-native performance with minimal overhead.           |
-| Isolation      | Virtual machines provide strong isolation at the hardware level.       | Containers provide process-level isolation, which is comparatively lighter. |
-| Resource Usage | Virtual machines consume more CPU and RAM resources.                   | Containers use fewer resources by sharing the host system efficiently.      |
-| Portability    | Virtual machines are less portable due to OS and size dependencies.    | Containers are highly portable and can run anywhere with a container runtime. |
-
+| Feature        | VM 🖥️              | Container 📦              |
+|----------------|--------------------|---------------------------|
+| OS             | Full OS per VM     | No OS (shared)            |
+| Size           | Heavy (GBs)        | Light (MBs)               |
+| Startup        | Slow               | Very fast                 |
+| Performance    | Lower              | Near native               |
+| Isolation      | Strong             | Moderate                  |
+| Resource Usage | High (more CPU/RAM)| Low (efficient sharing)   |
+| Portability    | Less portable      | Highly portable (runs anywhere with container runtime) |
 
 
 
