@@ -62,7 +62,7 @@ ${\color{lightblue}  \textbf{Docker}}$
   - resource efficiency
 
 
-##  ${\color{lightblue} \textbf{Virtual Machines (VMs) \ vs. \  Containers)}}$
+
 
 
 
@@ -70,6 +70,8 @@ ${\color{lightblue}  \textbf{Docker}}$
 
 <img width="1175" height="678" alt="image" src="https://github.com/user-attachments/assets/537434ed-6c7b-4d71-a247-bb61cfff4279" />
 <img width="1285" height="575" alt="image" src="https://github.com/user-attachments/assets/6f20b98e-64a5-4ec5-a680-0740ee1b395e" />
+
+##  ${\color{lightblue} \textbf{Virtual Machines (VMs) \ vs. \  Containers)}}$
 | Feature        | VM 🖥️              | Container 📦              |
 |----------------|--------------------|---------------------------|
 | OS             | Full OS per VM     | No OS (shared)            |
@@ -79,6 +81,7 @@ ${\color{lightblue}  \textbf{Docker}}$
 | Isolation      | Strong             | Moderate                  |
 | Resource Usage | High (more CPU/RAM)| Low (efficient sharing)   |
 | Portability    | Less portable      | Highly portable (runs anywhere with container runtime) |
+
 <img width="1365" height="547" alt="image" src="https://github.com/user-attachments/assets/52c25be2-c2e0-4806-a3cb-b54636237476" />
 <img width="1542" height="593" alt="image" src="https://github.com/user-attachments/assets/02800600-5a46-4ca0-9b17-8b6e76bbb625" />
 
