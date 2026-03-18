@@ -2,157 +2,97 @@
 ---
 
 
+# Docker Volume
 
-## 🔹 Create Docker Volume
-```
+## 1. Create Docker Volume
 docker volume create myvol
-````
 
----
-
-## 🔹 List Docker Volumes
-
-```bash
+## 2. List Volumes
 docker volume ls
-```
 
----
-
-## 🔹 Inspect Volume
-
-```bash
+## 3. Inspect Volume
 docker volume inspect myvol
-```
 
 ---
 
-## 🔹 Pull Image (Ubuntu)
-
-```bash
+## 4. Pull Image
 docker pull ubuntu
-```
 
 ---
 
-## 🔹 Create Container & Mount Volume
+## 5. Create Container & Mount Volume
 
-### Using --mount (recommended)
-
-```bash
+# Using --mount (recommended)
 docker run -itd --name c1 --mount source=myvol,target=/data ubuntu
-```
 
-### Using -v (shortcut)
-
-```bash
+# Using -v (shortcut)
 docker run -itd --name cont1 -v myvol:/data ubuntu
-```
 
 ---
 
-## 🔹 List Running Containers
-
-```bash
+## 6. Check Running Containers
 docker ps
-```
 
 ---
 
-## 🔹 Login into Container
-
-```bash
+## 7. Login into Container
 docker exec -it c1 /bin/bash
-```
 
 ---
 
-## 🔹 Navigate to Volume Directory
-
-```bash
+## 8. Go to Mounted Directory
 cd /data
-```
 
 ---
 
-## 🔹 Create Files
-
-```bash
+## 9. Create Files
 touch index.html error.html style.css
-```
 
 ---
 
-## 🔹 Exit Container
-
-```bash
+## 10. Exit Container
 exit
-```
 
 ---
 
-## 🔹 Create Second Container with Same Volume
+## 11. Create Another Container Using Same Volume
 
-### Using --mount
-
-```bash
 docker run -itd --name c2 --mount source=myvol,target=/data2 ubuntu
-```
 
-### Using -v
-
-```bash
+# OR
 docker run -itd --name cont2 -v myvol:/data2 ubuntu
-```
 
 ---
 
-## 🔹 Verify Data Sharing
+## 12. Verify Data Sharing
 
-```bash
 docker exec -it c2 /bin/bash
+
 cd /data2
 ls
-```
 
-👉 You will see:
-
-```
+# You will see:
 index.html error.html style.css
-```
 
 ---
 
-## 🔹 Stop Containers
-
-```bash
+## 13. Stop Containers
 docker stop c1 c2
-```
 
 ---
 
-## 🔹 Remove Containers
-
-```bash
+## 14. Remove Containers
 docker rm c1 c2
-```
 
 ---
 
-## 🔹 Check Volume Still Exists
-
-```bash
+## 15. Volume Still Exists (Important Concept)
 docker volume ls
-```
 
 ---
 
-## 🔹 Remove Volume
-
-```bash
+## 16. Remove Volume
 docker volume rm myvol
-```
-
----
 
 ## 🧠 Key Concept
 
