@@ -16,7 +16,7 @@ docker pull <image_name>
 ```
 ### dockerhub username (you can pull sample images from here)
 ````
-abhipraydh96
+ashu-1808
 ````
 ### Create Container from Image
 Creates and starts a container from the specified image.
